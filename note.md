@@ -4,3 +4,7 @@
 
 > to run in android, the command is:
   "npm run android"
+
+> MASALAHH HYPRLAND LAGI SYBAALLL
+  Ijin sehari dulu hiks
+
