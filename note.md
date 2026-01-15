@@ -24,3 +24,27 @@
 
 > run using this command:
    "npx expo start --web" and then the link will be opened
+
+> in the file "App.tsx", change the import 
+ from:
+  import { NewAppScreen } from '@react-native/new-app-screen';
+  import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
+  import {
+    SafeAreaProvider,
+    useSafeAreaInsets,
+   } from 'react-native-safe-area-context';
+
+ to:
+  import React from 'react';
+  import { Text, View, StyleSheet } from 'react-native';
+
+
+> in the root folder, add a file with name "index.web.js" and fill it with:
+`
+  import { registerRootComponent } from 'expo';
+  import App from './App';
+
+  registerRootComponent(App);
+`
+and then you must to restart 'npx expo start --web'
+
